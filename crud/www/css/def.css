@@ -1,0 +1,109 @@
+﻿@font-face {
+    font-family: 'doom1';
+    src: url('../amazdoom/AmazDooMLeftOutline.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'doom2';
+    src: url('../amazdoom/AmazDooMRightOutline.ttf') format('truetype')
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translate3d(100%, 0, 0);
+        visibility: visible;
+        opacity: 1;
+    }
+    to {
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@-webkit-keyframes slideOutLeft {
+    from {
+        transform: translate3d(0, 0, 0);
+    }
+    to {
+        visibility: hidden;
+        opacity: 0;
+        transform: translate3d(-100%, 0, 0);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible;
+        opacity: 1;
+    }
+    to {
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@-webkit-keyframes slideOutRight {
+    from {
+        transform: translate3d(0, 0, 0);
+    }
+    to {
+        visibility: hidden;
+        opacity: 0;
+        transform: translate3d(100%, 0, 0);
+    }
+}
+
+@-webkit-keyframes loading {
+    0% {
+        height: 10px;
+        width: 10px;
+    }
+    100% {
+        transform: translateY(-40px);
+        height: 20px;
+        width: 20px;
+    }
+}
+
+.slideInRight {
+    animation-name: slideInRight;
+}
+
+.slideOutLeft {
+    animation-name: slideOutLeft;
+}
+
+.slideInLeft {
+    animation-name: slideInLeft;
+}
+
+.slideOutRight {
+    animation-name: slideOutRight;
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(.01,.01);
+        opacity:0;
+    }
+    to {
+        transform: scale(1,1);
+    }
+}
+
+.zoomIn {
+    animation-name: zoomIn;
+}
+
+@keyframes zoomOut {
+    from {
+        transform: scale(1,1);
+    }
+    to {
+        transform: scale(.01,.01);
+        opacity: 0;
+    }
+}
+
+.zoomOut {
+    animation-name: zoomOut;
+}

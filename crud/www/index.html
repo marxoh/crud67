@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<html style="background-color:black;">
+<!--<html style="background-color:orangered;">-->
+<head>
+    <title>CRUD</title>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=yes">
+    <meta name="viewport" content="width=device-width, height=device-height, user-scalable=no, maximum-scale=1, minimum-scale=0">
+    <script type="text/javascript" src="scripts/jquery-1.11.3.js"></script>
+    <script type="text/javascript" src="scripts/index.js"></script>
+    <script type="text/javascript" src="scripts/jquery.vide.js"></script>
+    <link rel="stylesheet" href="css/table.css" />
+    <link rel="stylesheet" href="css/def.css" />
+    <link rel="stylesheet" href="css/index.css" />
+</head>
+<body>
+    <div id="experience" data-vide-bg="video/v15.mp4">
+        <canvas id="lines"></canvas>
+        <div id="crudx">
+            <div id="crudy">
+                <span id="titcr">Cr</span>
+                <span id="titud">uD</span>
+            </div>
+        </div>
+        <div id="wait"></div>
+
+        <section id="pageone" class="page active">
+            <header>
+                <label class="hbtn">Inicio</label>
+            </header>
+            <section>
+                <div id="content">
+                    <fieldset>
+                        <table class="tlog">
+                            <tr>
+                                <td><label for="usuario" id="lusuario">Usuario:</label></td>
+                                <td><input type="text" id="tusuario"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="password" id="lpassword">Password:</label></td>
+                                <td><input type="password" id="tpassword"></td>
+                            </tr>
+                        </table>
+                    </fieldset>
+                    <div id="btnlogin">
+                        <button id="aceptar" onclick="aceptar();">Aceptar</button>
+                    </div>
+                    <a href="#logon" id="linkgoreg" onclick="goreg();">Registrate</a>
+                </div>
+            </section>
+            <footer>
+                <button class="fini" onclick="aceptar();">>>></button>
+            </footer>
+        </section>
+
+        <section id="pagetwo" class="page">
+            <header>
+                <label class="hbtn">Tabla</label>
+            </header>
+            <section>
+                <div id="result"></div>               
+            </section>
+            <footer>
+                <button class="fini" onclick="rot0();"><<<</button>
+            </footer>
+        </section>
+        
+        <section id="register" class="popup">
+            <header>
+                <img class="hini" src="images/Equis.png" onclick="asd()"/>
+                <div class="hbtn">Registrandote</div>
+            </header>
+            <section class="reg">
+                <table>
+                    <tr>
+                        <td><label for="tusuariod" id="lusuariod">Usuario:</label></td>
+                        <td style="width: 100%"><input type="text" id="tusuariod" value="alias" onfocus="this.value = ''"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="tpasswordd1" id="lpasswordd1">Password:</label></td>
+                        <td><input id="tpasswordd1" type="text" value="ingresa tu password." onfocus="this.type = 'password'; this.value = ''"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input id="tpasswordd2" type="text" value="repite tu password." onfocus="this.type='password'; this.value=''"></td>
+                    </tr>
+                </table>
+                <div id="btnlogon">
+                    <button onclick="logon();" id="btnacd">Aceptar</button>
+                </div>
+            </section>
+        </section>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script src="scripts/dots.js"></script>
+    </div> <!--id="experience" data-vide-bg="video/v15.mp4"-->
+</body>
+</html>

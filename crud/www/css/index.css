@@ -1,0 +1,216 @@
+#lines {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    opacity: .55;
+}
+
+#wait {
+    color: white;
+    position: absolute;
+    top: 60vh;
+    width:100%;
+}
+
+#btnlogin, #btnlogon {
+    padding-top:10px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.page {
+    opacity: 0;
+    animation-duration: .5s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+    .page.active {
+        display: flex;
+        opacity: 1;
+        z-index:2;
+    }
+
+#content {
+    position: absolute;
+    top: 120px;
+    left: 2%;
+    right: 2%;
+}
+
+#content table {
+    left: 2%;
+    right: 2%;
+    width: 100%;
+}
+
+fieldset {
+    left: 2%;
+    right: 2%;
+}
+
+#experience {
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+    top:0;
+    left:0;
+    height:100vh;
+    width:100vw;
+}
+
+.loading {
+    margin: auto;
+    text-align: center;
+    width: 100%;
+}
+
+    .loading span {
+        animation: loading 1s infinite alternate;
+        background: #333;
+        border-radius: 10px;
+        display: inline-block;
+        height: 10px;
+        margin: 60px auto;
+        width: 10px;
+    }
+
+        .loading span:nth-of-type(2) {
+            animation-delay: 0.2s;
+            background: #444;
+        }
+
+        .loading span:nth-of-type(3) {
+            animation-delay: 0.4s;
+            background: #666;
+        }
+
+        .loading span:nth-of-type(4) {
+            animation-delay: 0.6s;
+            background: #888;
+        }
+
+        .loading span:nth-of-type(5) {
+            animation-delay: 0.8s;
+            background: #aaa;
+        }
+
+#result {
+    position:absolute;
+    top: 120px;
+    width: 100vw;
+}
+
+#titcr {
+    font-family: "doom1";
+    color: #ff6a00;
+    font-size: 500%;
+}
+
+#titud {
+    font-family: "doom2";
+    color: #ff6a00;
+    font-size: 500%;
+}
+
+#crudx {
+    display: flex;
+    justify-content: center;
+}
+
+#crudy {
+    position: absolute;
+    top: 40px;
+}
+
+.popup {
+    position: absolute;
+    top: 120px;
+    left: 10%;
+    animation-duration: .5s;
+    right: 10%;
+    bottom: 75%;
+    background-color: rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    margin-bottom: -180px;
+}
+
+    .popup.active {
+        display: flex;
+        opacity: 1;
+        z-index: 100;
+    }
+
+.reg {
+    position: absolute; 
+    top: 45px;
+}
+
+header {
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    bottom: auto !important;
+    width: 100%;
+    height: 30px !important;
+    background-color: rgba(255, 255, 255, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    header .hini {
+        position: absolute;
+        left: 5px;
+        width: 20px;
+        cursor: pointer;
+    }
+
+    header .hbtn {
+        color: #d3d3d3;
+    }
+
+label, #linkgoreg {
+    color: white;
+}
+
+input {
+    width: 90%;
+    background-color: white;
+    opacity: 0.5;
+}
+
+button {
+    color: white;
+    background-color: rgba(128, 128, 128, 0.2);
+    border-color: rgba(128, 128, 128, 0.4);
+}
+
+td button {
+    color: white;
+    background-color: rgba(128, 128, 128, 0.2);
+    border-color: rgba(128, 128, 128, .4);
+}
+
+footer {
+    bottom: 0;
+    position: absolute !important;
+    top: auto !important;
+    height: 30px !important;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding-top: 7px;
+}
+
+    footer .fini {
+        position: absolute;
+        left: 5px;
+        cursor: pointer;
+    }

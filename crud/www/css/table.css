@@ -1,0 +1,55 @@
+﻿#restable th {
+    line-height: 24px;
+    white-space: nowrap;
+    padding: 0 10px;
+    line-height: 24px;
+    text-align: left;
+    font-weight: normal;
+    border: 1px solid #333333;
+    color: transparent;
+    line-height: 0;
+    padding: 0 10px;
+    height: 0;
+    border: none;
+    white-space: nowrap;
+}
+
+#restable div {
+    background: transparent;
+    color: #ffffff;
+    line-height: 24px;
+    padding: 0 10px;
+    margin: 0 0 0 -10px;
+    border-left: 1px solid #999999;
+    position: absolute;
+    top: 0;
+}
+
+#restable td {
+    color: #ffffff;
+    line-height: 24px;
+    white-space: nowrap;
+    padding: 0 10px;
+    border-left: 1px solid #666666;
+    border-bottom: 1px solid #666666;
+}
+
+/* header position is based on this div */
+.tableContainer {
+    height: 200px;
+    /*background-color: green;*/
+    border: 1px solid #666666;
+    padding-top: 24px;
+    position: absolute;
+    top: 50px;
+    overflow-y: hidden;
+    overflow-x: auto;
+}
+
+/* vertical scrolling */
+.tableScrollInner {
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    /*background-color: red;*/
+}
